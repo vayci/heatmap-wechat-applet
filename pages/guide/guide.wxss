@@ -1,0 +1,32 @@
+.title {
+  padding-top: 10vh;
+  font-size: 1.6rem;
+}
+
+.tip {
+  padding: 10vh 0 0 10vw;
+  text-align: left;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.input_filed {
+  padding-top: 10vh;
+  width: 80%;
+  border-bottom: 1px solid #969696;
+  font-size: 1.1rem;
+  font-family: "微软正黑体";
+  text-align: center;
+  color: #969696;
+}
+
+.nav {
+    margin-top: 40vh;
+    bottom: 0px;
+    color: #969696;
+    height: 8vh;
+    font-size: 1px;
+}
+
+.iconfont {
+    font-size: 1.9rem;
+}
