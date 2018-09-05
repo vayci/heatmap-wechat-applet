@@ -1,9 +1,8 @@
 <!--pages/guide/guide.wxml-->
 <view class='container'>
-<text class='title'>欢迎使用热图打卡</text>
-<view class='tip'>1.给您的打卡设定一个名称</view>
-<view class='input_filed'><input placeholder="" auto-focus/></view>
+<text class='step'>1.给您的打卡设定一个名称</text>
+<view class='input_filed'><input placeholder="" bindinput='setName'/></view>
 <view class='nav'>
-<navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide2?title=navigate" hover-class="navigator-hover"></navigator>
+<navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide2?title=navigate"></navigator>
 </view>
 </view>

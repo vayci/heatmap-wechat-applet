@@ -1,1 +1,11 @@
- <navigator url="/pages/index/index?title=navigate" hover-class="navigator-hover">完成</navigator>
+
+<view class='container'>
+<text class='step'>4.打卡模式选择</text>
+<view>
+<view class='option' bindtap='switchDuration'>主动模式</view>
+<view class='option' bindtap='switchDuration'>被动模式</view>
+</view>
+<view class='nav'>
+<navigator class='iconfont icon-jinrujiantou' url="/pages/index/index?title=navigate"></navigator>
+</view>
+</view>

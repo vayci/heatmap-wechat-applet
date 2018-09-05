@@ -1,1 +1,2 @@
-/* pages/guide/guide3.wxss */
+@import "../../app.wxss";
+@import "guide.wxss";

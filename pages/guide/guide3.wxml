@@ -1,1 +1,11 @@
- <navigator url="/pages/guide/guide4?title=navigate" hover-class="navigator-hover">下一步</navigator>
+
+<view class='container'>
+<text class='step'>3.设定选项及热图配色</text>
+<view>
+<view class='option' bindtap='switchDuration'>没有</view>
+<view class='option' bindtap='switchDuration'>有</view>
+</view>
+<view class='nav'>
+<navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide4?title=navigate"></navigator>
+</view>
+</view>

@@ -1,0 +1,4 @@
+<view class='container'>
+  <view animation="{{animationData}}" class='title'>欢迎使用热图打卡</view>
+  <navigator animation="{{animationData}}" class='start' url="/pages/guide/guide?title=welcome" hover-class="navigator-hover">开启</navigator>
+</view>

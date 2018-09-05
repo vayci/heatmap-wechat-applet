@@ -1,11 +1,11 @@
 
 <view class='container'>
-<text class='tip'>2.选择打卡周期</text>
+<text class='step'>2.选择打卡周期</text>
 <view>
-<view class='option'>年度</view>
-<view class='option'>月度</view>
+<view class='option' bindtap='switchDuration'>年度</view>
+<view class='option' bindtap='switchDuration'>月度</view>
 </view>
 <view class='nav'>
-<navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide3?title=navigate" hover-class="navigator-hover"></navigator>
+<navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide3?title=navigate"></navigator>
 </view>
 </view>
