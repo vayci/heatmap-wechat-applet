@@ -1,11 +1,11 @@
-// pages/guide/guide2.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    checked: 'month'
+    durationCheck: 'year'
   },
 
   /**
@@ -29,15 +29,10 @@ Page({
 
   },
 
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-
-  switchDuration: function (){
-
+  switchDuration: function (e){
+    app.globalData.clockInfo.duration = e.currentTarget.dataset.value;
+    this.setData({
+      durationCheck: e.currentTarget.dataset.value
+    })
   }
 })

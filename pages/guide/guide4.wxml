@@ -1,6 +1,6 @@
 
 <view class='container'>
-<text class='step'>4.打卡模式选择</text>
+<text class='step'>4/4.打卡模式选择</text>
 <view>
 <view class='option' bindtap='switchDuration'>主动模式</view>
 <view class='option' bindtap='switchDuration'>被动模式</view>

@@ -1,11 +1,17 @@
 
 <view class='container'>
-<text class='step'>2.选择打卡周期</text>
-<view>
-<view class='option' bindtap='switchDuration'>年度</view>
-<view class='option' bindtap='switchDuration'>月度</view>
+<text class='step'>2/4.选择打卡周期</text>
+<view class='options'>
+  <view class='group'>
+    <view class='option' bindtap='switchDuration' data-value='year'>年度</view> 
+    <view class='option underline' wx:if="{{durationCheck == 'year'}}"></view>
+  </view>
+  <view class='group'>
+    <view class='option' bindtap='switchDuration' data-value='month'>月度</view> 
+    <view class='option underline' wx:if="{{durationCheck == 'month'}}"></view>
+  </view>
 </view>
 <view class='nav'>
-<navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide3?title=navigate"></navigator>
+  <navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide3?title=navigate"></navigator>
 </view>
 </view>
