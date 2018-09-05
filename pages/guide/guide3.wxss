@@ -1,2 +1,18 @@
 @import "../../app.wxss";
 @import "guide.wxss";
+
+.options {
+  flex-direction: column;
+  width: 60vw;
+}
+
+.col_group {
+  display: flex;
+  flex-direction: row;  
+  padding-bottom: 5vh;
+  text-align: left;
+}
+
+.option {
+  text-align: left;
+}

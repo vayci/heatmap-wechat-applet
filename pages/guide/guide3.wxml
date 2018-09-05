@@ -1,10 +1,18 @@
 
 <view class='container'>
-<text class='step'>3.设定选项及热图配色</text>
+<text class='header'>3/4.设定选项及热图配色</text>
+<view class='body'>
 <view class='options'>
-  <view class='option' bindtap='switchDuration'>没有</view><view class='color'>#fff</view>
-  <view class='option' bindtap='switchDuration'>有</view><view class='color'>#000</view>
+  <view class='col_group'>
+    <view class='option' bindtap='switchDuration'>没有</view><view class='color'>#FFFFFF</view>
+  </view>
+  <view class='col_group'>
+  <view class='option' bindtap='switchDuration'>有</view><view class='color'>#000000</view>
+  </view>
+  
 </view>
+</view>
+
 <view class='nav'>
 <navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide4?title=navigate"></navigator>
 </view>

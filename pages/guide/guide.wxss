@@ -1,11 +1,16 @@
-.step {
-  padding-top: 10vh;
+.header {
   font-size: 1.4rem;
+  height: 30vh;
+  line-height: 30vh;
+  padding-top: 10vh;
+}
+
+.body {
+    height: 50vh;
 }
 
 .input_filed {
-  padding-top: 10vh;
-  width: 80%;
+  width: 80vw;
   border-bottom: 1px solid #969696;
   font-size: 1.1rem;
   font-family: "微软正黑体";
@@ -14,13 +19,38 @@
 }
 
 .nav {
-    margin-top: 40vh;
     bottom: 0px;
     color: #969696;
-    height: 8vh;
+    height: 20vh;
     font-size: 1px;
 }
 
 .iconfont {
     font-size: 1.9rem;
+}
+
+
+.options {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.2rem;
+}
+
+.row_group {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  padding: 0 5vw 0 5vw;
+  text-align: center;
+}
+
+.option {
+  width: 20vw;
+  text-align: center;
+}
+
+.underline {
+  border-top: 1px solid #969696;
 }

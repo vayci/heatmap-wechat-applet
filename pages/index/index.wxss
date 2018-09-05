@@ -1,28 +1,36 @@
 /**index.wxss**/
+.title {
+  font-size: 1.4rem;
+  height: 20vh;
+  line-height: 20vh;
+  width: 100vw;
+  text-align: center;
+  font-family: "Arial, Helvetica, sans-serif";
+}
+
 .wrap {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
     width: 100%;
-    -webkit-overflow-scrolling: touch;
+    height: 23vh;
 }
 .col {
     padding: 0px;
 }
 .item {
     background: #eee;
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     margin: 2px;
     border-radius: 1px;
 }
 .item:hover {
     border: 1px solid black;
-    height: 8px;
-    width: 8px;
+    height: 12px;
+    width: 12px;
 }
 .weekItem {
-    height: 10px;
+    height: 14px;
     width: 20px;
     margin: 2px;
     font-size: 8px;
@@ -30,6 +38,24 @@
     font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
     color: gray;
 }
+
+.map {
+  display:flex;
+  flex-direction:row;
+  overflow:scroll;
+  width:100%;
+  -webkit-overflow-scrolling:touch;
+}
+
+.content {
+  height: 50vh;
+  width: 100vw;
+}
+
+.content_item {
+  padding: 1.2rem;
+}
+
 .green {
     background: greenyellow;
 }

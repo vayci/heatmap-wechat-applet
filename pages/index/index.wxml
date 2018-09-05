@@ -1,10 +1,13 @@
 <!--index.wxml-->
 <view class="container">
+  <view class='title'>
+      {{title}}
+  </view>
 <view class="wrap"> 
-   <view class="week" id="col_0">
-    <view class="weekItem"  wx:for="{{reWeekArr}}" wx:key="idx" wx:for-index="idx" wx:for-item="week" id="week_{{idx}}">{{week}}</view>
+    <view class="week" id="col_0">
+      <view class="weekItem"  wx:for="{{reWeekArr}}" wx:key="idx" wx:for-index="idx" wx:for-item="week" id="week_{{idx}}">{{week}}          </view>
    </view>
-   
+   <view class='map'>
    <view class="col" id="col_1">
     <view class="item {{item_0}}" bindtap="showDetail" data-id="0"></view>
     <view class="item {{item_1}}" bindtap="showDetail" data-id="1"></view>
@@ -478,6 +481,11 @@
     <view class="item {{item_365}}" bindtap="showDetail" data-id="365"></view>
     <view wx:if="{{leapYear}}"  class="item {{item_366}}" bindtap="showDetail" data-id="366"></view>
    </view>
+   </view>
   </view>
-  <button bindtap='addData'>今天打卡</button>
+  <view class='content'>
+    <view class='content_item'>
+        过去的一年中，共打卡100次
+    </view>
+  </view>
 </view>

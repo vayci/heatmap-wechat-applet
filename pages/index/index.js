@@ -13,7 +13,8 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    reWeekArr: []
+    reWeekArr: [],
+    title: "五月天演唱会打卡"
   },
   //事件处理函数
   bindViewTap: function() {

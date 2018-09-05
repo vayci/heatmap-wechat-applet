@@ -1,2 +1,7 @@
 @import "../../app.wxss";
 @import "guide.wxss";
+@import "guide3.wxss";
+
+.col_group {
+  text-align: center;
+}
