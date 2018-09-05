@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/welcome/welcome",
+    "pages/index/index",
     "pages/guide/guide",
     "pages/guide/guide2",
     "pages/guide/guide3",
     "pages/guide/guide4",
-    "pages/index/index",
     "pages/logs/logs",
     "pages/sign/sign"
   ],

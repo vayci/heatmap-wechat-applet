@@ -3,6 +3,16 @@ Page({
     animationData: {}
   },
   onShow: function () {
+    wx.getStorage({
+      key: 'heatdata',
+      success: function (res) {
+        console.log(222);
+        wx.redirectTo({
+          url: '../index/index'
+        })
+      }
+    })
+
     var animation = wx.createAnimation({
       duration: 3000,
       timingFunction: 'ease',

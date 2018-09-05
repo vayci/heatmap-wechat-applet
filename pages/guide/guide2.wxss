@@ -13,12 +13,12 @@
 .group {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 20vw;
+  padding: 0 5vw 0 5vw;
   text-align: center;
 }
 
 .option {
-  padding: 0vh;
   width: 20vw;
   text-align: center;
 }

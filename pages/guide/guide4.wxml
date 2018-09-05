@@ -6,6 +6,6 @@
 <view class='option' bindtap='switchDuration'>被动模式</view>
 </view>
 <view class='nav'>
-<navigator class='iconfont icon-jinrujiantou' url="/pages/index/index?title=navigate"></navigator>
+<navigator class='iconfont icon-jinrujiantou' url="/pages/index/index?title=navigate" open-type="redirect"></navigator>
 </view>
 </view>
