@@ -15,7 +15,10 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     reWeekArr: [],
     title: "你的打卡记录",
-    selectedDate: ""
+    selectedDate: "",
+    countYear: 0,
+    countMonth: 0,
+    countWeek: 0
   },
   //事件处理函数
   bindViewTap: function() {
@@ -51,17 +54,38 @@ Page({
     wx.getStorage({
       key: 'heatdata',
       success: function (res) {
+          var year = 0;
+          var month = 0;
+          var week = 0;
           for (var key in res.data) {
             var days = new Date(key).getTime() - start.getTime();
             var diff = parseInt(days / (1000 * 60 * 60 * 24));
+         
             var listLength = res.data[key].length;
             var last = res.data[key][listLength-1];// 当天取最后一个
+            var lastValue = 0;
             for (var value in last){
+              lastValue = last[value];
               pageobj.setData({
                 ['item_' + diff]: app.globalData.clockInfo.optionList[last[value]]
               })
             }
+            if (diff <= 7 && lastValue > 0) {
+              week++;
+            }
+            if (diff <= 30 && lastValue > 0) {
+              month++;
+            }
+            if (diff <= 365 && lastValue > 0) {
+              year++;
+            }
+
           }
+        pageobj.setData({
+          countYear: year,
+          countMonth: month,
+          countWeek: week
+        })
       }
     })
   },
