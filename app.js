@@ -37,4 +37,14 @@ App({
     userInfo: null,
     clockInfo: { optionList: ['color_none', 'color_green1', 'color_green2', 'color_green3']}
   }
+
+  ,
+  clockInfo: {
+    id: {}, //id
+    name: "", //名称
+    duration: "year", //周期
+    optionList: [], //配色方案
+    optionName: [], //打卡分类
+    mode: []
+  }
 })

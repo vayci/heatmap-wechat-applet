@@ -1,7 +1,8 @@
 {
   "pages": [
+        "pages/index/index",
     "pages/welcome/welcome",
-    "pages/index/index",
+
     "pages/guide/guide",
     "pages/guide/guide2",
     "pages/guide/guide3",

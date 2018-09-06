@@ -3,8 +3,8 @@
 <text class='header'>4/4.打卡模式选择</text>
 <view class='body'>
   <view class='options'>
-    <view class='col_group' bindtap='switchDuration'>主动模式</view>
-    <view class='col_group' bindtap='switchDuration'>被动模式</view>
+    <view class='col_group' bindtap='switchMode' data-value='active'>主动模式</view>
+    <view class='col_group' bindtap='switchMode' data-value='passive'>被动模式</view>
   </view>
 </view>
 <view class='nav'>

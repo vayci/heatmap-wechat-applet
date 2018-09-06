@@ -16,6 +16,9 @@ page{
   padding: 0;
 }
 
+/**
+* 打卡配色方案1
+*/
 .color_none {
   background: #eee !important;
 }

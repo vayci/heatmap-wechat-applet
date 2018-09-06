@@ -65,3 +65,22 @@
 .content_item {
   padding-top: 1.5rem;
 }
+
+.btn_area {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  text-align: center;
+}
+
+.btns {
+  text-align: center;
+  line-height: 3vh;
+  margin: 0 5vw 0 5vw;
+  padding: 5px;
+  width: 10vw;
+  height: 3vh;
+  border: 1px solid #969696;
+}

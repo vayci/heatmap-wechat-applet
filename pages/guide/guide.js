@@ -29,5 +29,6 @@ Page({
 
   setName: function (e){
     app.globalData.clockInfo.name = e.detail.value
+    app.globalData.clockInfo.id = new Date().getTime
   }
 })

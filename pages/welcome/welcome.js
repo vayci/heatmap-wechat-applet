@@ -6,7 +6,6 @@ Page({
     wx.getStorage({
       key: 'heatdata',
       success: function (res) {
-        console.log(222);
         wx.redirectTo({
           url: '../index/index'
         })
