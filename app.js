@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    clockInfo: {}
+    clockInfo: { optionList: ['color_none', 'color_green1', 'color_green2', 'color_green3']}
   }
 })

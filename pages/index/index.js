@@ -14,7 +14,8 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     reWeekArr: [],
-    title: "五月天演唱会打卡"
+    title: "五月天演唱会打卡",
+    selectedDate: ""
   },
   //事件处理函数
   bindViewTap: function() {
@@ -80,10 +81,16 @@ Page({
       success: function (res) {
         for (var i = 0; i < res.data.length; i++) {
           for (var key in res.data[i]) {
+
             var days = new Date(key).getTime() - start.getTime();
             var diff = parseInt(days / (1000 * 60 * 60 * 24));
+
+            var value = res.data[i][key];
+            console.log({
+              ['item_' + diff]: app.globalData.clockInfo.optionList[value]
+            })
             pageobj.setData({
-              ['item_' + diff]: 'green'
+              ['item_' + diff]: app.globalData.clockInfo.optionList[value]
             })
           }
         }
@@ -97,12 +104,13 @@ Page({
     var date = e.currentTarget.dataset.id;
     var milliseconds = start.getTime() + 1000 * 60 * 60 * 24 * date;
     var newDate = new Date(milliseconds);
-
-    
-    console.log(util.formatTime(newDate));
+    this.setData({
+      selectedDate: util.formatTime(newDate)
+    })
   },
   addData: function(e) {
-    heatMapList.push({[new Date()]: 1 });
+    var value = e.currentTarget.dataset.value;
+    heatMapList.push({ [new Date()]: value });
     wx.setStorage({
       key: "heatdata",
       data: heatMapList

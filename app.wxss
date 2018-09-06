@@ -16,6 +16,22 @@ page{
   padding: 0;
 }
 
+.color_none {
+  background: #eee !important;
+}
+
+.color_green1 {
+  background: #C6E48B !important;
+}
+
+.color_green2 {
+  background: #7BC96F !important;
+}
+
+.color_green3 {
+  background: #196127 !important;
+}
+
 /**
  * Font ： Noto Sans S Chinese
  */

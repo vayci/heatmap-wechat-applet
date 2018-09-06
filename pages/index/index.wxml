@@ -3,6 +3,9 @@
   <view class='title'>
       {{title}}
   </view>
+    <view class='popup'>
+    {{selectedDate}}
+  </view>
 <view class="wrap"> 
     <view class="week" id="col_0">
       <view class="weekItem"  wx:for="{{reWeekArr}}" wx:key="idx" wx:for-index="idx" wx:for-item="week" id="week_{{idx}}">{{week}}          </view>
@@ -486,6 +489,26 @@
   <view class='content'>
     <view class='content_item'>
         过去的一年中，共打卡100次
+    </view>
+    <view class='content_item'>
+        过去一个月中，共打卡12次
+    </view>
+    <view class='content_item'>
+        过去一个周，共打卡1次
+    </view>
+  </view>
+  <view class='btn_area'>
+    <view class='btns' data-value='0' bindtap='addData'>
+        没有
+    </view>
+    <view class='btns' data-value='1' bindtap='addData'>
+        轻度
+    </view>
+    <view class='btns' data-value='2' bindtap='addData'>
+        一般
+    </view>
+    <view class='btns' data-value='3' bindtap='addData'>
+        严重
     </view>
   </view>
 </view>

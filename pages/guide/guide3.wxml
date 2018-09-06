@@ -4,12 +4,17 @@
 <view class='body'>
 <view class='options'>
   <view class='col_group'>
-    <view class='option' bindtap='switchDuration'>没有</view><view class='color'>#FFFFFF</view>
+    <view class='option' bindtap='switchDuration' data-note='没有' data-value='1' data-color='#EEEEEE'>没有</view><view class='color color_none'></view>
   </view>
   <view class='col_group'>
-  <view class='option' bindtap='switchDuration'>有</view><view class='color'>#000000</view>
+    <view class='option' bindtap='switchDuration' data-note='有'data-value='2' data-color='#C6E48B'>轻度</view><view class='color color_green1'></view>
   </view>
-  
+   <view class='col_group'>
+    <view class='option' bindtap='switchDuration' data-note='没有'data-value='2' data-color='#7BC96F'>一般</view><view class='color color_green2'></view>
+  </view>
+  <view class='col_group'>
+    <view class='option' bindtap='switchDuration' data-note='没有'data-value='2' data-color='#196127'>严重</view><view class='color color_green3'></view>
+  </view>
 </view>
 </view>
 

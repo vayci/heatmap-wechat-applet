@@ -16,3 +16,8 @@
 .option {
   text-align: left;
 }
+
+.color {
+  width: 20vw;
+  height: 5vh;
+}
