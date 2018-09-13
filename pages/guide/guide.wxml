@@ -2,7 +2,7 @@
 <view class='container'>
 <text class='header'>1/4.设定打卡名称</text>
 <view class='body'>
-<view class='input_filed'><input placeholder="" bindinput='setName'/>{{}}</view>
+<view class='input_filed'><input placeholder="" bindinput='setName' auto-focus/></view>
 </view>
 <view class='nav'>
 <view class='iconfont icon-jinrujiantou' bindtap='navigate' url="/pages/guide/guide2?title=navigate"></view>
