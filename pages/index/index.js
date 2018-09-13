@@ -153,11 +153,13 @@ Page({
     wx.showModal({
       title: '提示',
       content: '是否清楚当前所有数据，重新添加新的任务（清除后数据不可恢复）',
-      success: function(){
-        wx.clearStorage();
-        wx.navigateTo({
-          url: '/pages/welcome/welcome',
-        })
+      success: function(e){
+        if(e.confirm){
+          wx.clearStorage();
+          wx.navigateTo({
+            url: '/pages/welcome/welcome',
+          })
+        }
       }
     })
   }
