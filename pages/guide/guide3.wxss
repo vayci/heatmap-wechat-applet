@@ -9,7 +9,7 @@
 .col_group {
   display: flex;
   flex-direction: row;  
-  padding-bottom: 5vh;
+  margin-bottom:5vh;
   text-align: left;
 }
 

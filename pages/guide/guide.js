@@ -29,6 +29,21 @@ Page({
 
   setName: function (e){
     app.globalData.clockInfo.name = e.detail.value
-    app.globalData.clockInfo.id = new Date().getTime
+    app.globalData.clockInfo.id = new Date().getTime()
+  },
+
+  navigate: function(e){
+    if (app.globalData.clockInfo.name){
+      wx.navigateTo({
+        url: '/pages/guide/guide2?title=navigate'
+      })
+    }else{
+      wx.showModal({
+        title: '',
+        content: '请给你的打卡取个名字吧!',
+        showCancel: false
+      })
+    }
+
   }
 })

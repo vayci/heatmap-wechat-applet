@@ -3,5 +3,9 @@
 @import "guide3.wxss";
 
 .col_group {
-  text-align: center;
+  justify-content:center;
+}
+
+.checked {
+  text-decoration: underline;
 }

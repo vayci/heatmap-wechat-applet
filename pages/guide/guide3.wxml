@@ -1,6 +1,6 @@
 
 <view class='container'>
-<text class='header'>3/4.设定选项及热图配色</text>
+<text class='header'>3/4.设定选项及热图配色<br/></text>
 <view class='body'>
 <view class='options'>
   <view class='col_group'>
@@ -21,4 +21,5 @@
 <view class='nav'>
 <navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide4?title=navigate"></navigator>
 </view>
+<view class='bottom'>(目前不支持设定选项及配色)</view>
 </view>

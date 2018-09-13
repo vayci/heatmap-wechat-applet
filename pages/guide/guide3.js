@@ -1,4 +1,4 @@
-// pages/guide/guide3.js
+const app = getApp()
 Page({
 
   data: {

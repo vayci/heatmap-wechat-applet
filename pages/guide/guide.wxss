@@ -2,7 +2,7 @@
   font-size: 1.4rem;
   height: 30vh;
   line-height: 30vh;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .body {
@@ -21,12 +21,19 @@
 .nav {
     bottom: 0px;
     color: #969696;
-    height: 20vh;
+    height: 15vh;
     font-size: 1px;
+}
+
+.bottom {
+  height: 5vh;
+  font-size:0.7rem;
 }
 
 .iconfont {
     font-size: 1.9rem;
+    padding-top:2rem;
+
 }
 
 
@@ -53,4 +60,8 @@
 
 .underline {
   border-top: 1px solid #969696;
+}
+
+.sub_header {
+  font-size: 10px;
 }

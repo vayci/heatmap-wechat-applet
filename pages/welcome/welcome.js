@@ -4,7 +4,7 @@ Page({
   },
   onShow: function () {
     wx.getStorage({
-      key: 'heatdata',
+      key: 'clockInfo',
       success: function (res) {
         wx.redirectTo({
           url: '../index/index'

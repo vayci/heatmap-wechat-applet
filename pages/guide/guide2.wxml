@@ -17,4 +17,5 @@
 <view class='nav'>
   <navigator class='iconfont icon-jinrujiantou' url="/pages/guide/guide3?title=navigate"></navigator>
 </view>
+<view class='bottom'>(目前不支持月度打卡)</view>
 </view>

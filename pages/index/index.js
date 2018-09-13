@@ -27,15 +27,21 @@ Page({
     })
   },
   onLoad: function () {
+    this.loadClockInfo();
     this.addWeek();
     this.loadData();
-    if (app.globalData.clockInfo.name){
-      this.setData({
-        title: app.globalData.clockInfo.name
-      })
-    }
   },
-
+  loadClockInfo: function(){
+    var page = this;
+    wx.getStorage({
+      key: 'clockInfo',
+      success: function (res) {
+        page.setData({
+          title: res.data.name
+        })
+      }
+    })
+  },
   addWeek: function(e) {
     var reWeek = [];
     for (var k = 0; k < 7; k++) {
@@ -127,6 +133,10 @@ Page({
         pageobj.setHeatDataAndReload(obj);
       }
     })
+    wx.showToast({
+      title: '打卡成功',
+      duration: 500
+    })
   },
   //更新本地存储并重新渲染Heatmap
   setHeatDataAndReload: function(data){
@@ -136,6 +146,18 @@ Page({
       data: data,
       success: function (e) {
         pageobj.loadData();
+      }
+    })
+  },
+  reset: function(){
+    wx.showModal({
+      title: '提示',
+      content: '是否清楚当前所有数据，重新添加新的任务（清除后数据不可恢复）',
+      success: function(){
+        wx.clearStorage();
+        wx.navigateTo({
+          url: '/pages/welcome/welcome',
+        })
       }
     })
   }

@@ -3,11 +3,12 @@
 <text class='header'>4/4.打卡模式选择</text>
 <view class='body'>
   <view class='options'>
-    <view class='col_group' bindtap='switchMode' data-value='active'>主动模式</view>
+    <view class='col_group checked' bindtap='switchMode' data-value='active'>主动模式</view>
     <view class='col_group' bindtap='switchMode' data-value='passive'>被动模式</view>
   </view>
 </view>
 <view class='nav'>
-<navigator class='iconfont icon-jinrujiantou' url="/pages/index/index?title=navigate"></navigator>
+<view class='iconfont icon-jinrujiantou' bindtap='navigate' url="/pages/index/index?title=navigate"></view>
 </view>
+<view class='bottom'>(目前不支持被动模式)</view>
 </view>
