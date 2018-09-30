@@ -152,7 +152,7 @@ Page({
   reset: function(){
     wx.showModal({
       title: '提示',
-      content: '是否清楚当前所有数据，重新添加新的任务（清除后数据不可恢复）',
+      content: '是否清除当前所有数据，重新添加新的任务（清除后数据不可恢复）',
       success: function(e){
         if(e.confirm){
           wx.clearStorage();
