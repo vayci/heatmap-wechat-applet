@@ -64,7 +64,7 @@ Page({
           var month = 0;
           var week = 0;
           for (var key in res.data) {
-            var days = new Date(key).getTime() - start.getTime();
+            var days = new Date().getTime() - new Date(key).getTime();
             var diff = parseInt(days / (1000 * 60 * 60 * 24));
          
             var listLength = res.data[key].length;

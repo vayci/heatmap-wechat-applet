@@ -491,13 +491,13 @@
   </view>
   <view class='content'>
     <view class='content_item'>
-        过去一年中，共打卡{{countYear}}次
+        过去一个周，共打卡{{countWeek}}次
     </view>
-    <view class='content_item'>
+	<view class='content_item'>
         过去一个月中，共打卡{{countMonth}}次
     </view>
     <view class='content_item'>
-        过去一个周，共打卡{{countWeek}}次
+        过去一年中，共打卡{{countYear}}次
     </view>
   </view>
   <view class='btn_area'>
