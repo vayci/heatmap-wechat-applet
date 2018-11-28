@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view class='reset'>
-  <view class='iconfont icon-zhongzhi' bindtap='reset' url="/pages/index/index?title=navigate"></view>
+  <view class='iconfont icon-qingchu' bindtap='reset' url="/pages/index/index?title=navigate"></view>
   </view>
   <view class='title'>
       {{title}}
@@ -491,13 +491,13 @@
   </view>
   <view class='content'>
     <view class='content_item'>
-        过去一个周，共打卡{{countWeek}}次
+        · 过去一周，共打卡{{countWeek}}次
     </view>
 	<view class='content_item'>
-        过去一个月中，共打卡{{countMonth}}次
+        · 过去一月，共打卡{{countMonth}}次
     </view>
     <view class='content_item'>
-        过去一年中，共打卡{{countYear}}次
+        · 过去一年，共打卡{{countYear}}次
     </view>
   </view>
   <view class='btn_area'>

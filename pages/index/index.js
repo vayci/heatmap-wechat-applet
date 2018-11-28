@@ -64,8 +64,10 @@ Page({
           var month = 0;
           var week = 0;
           for (var key in res.data) {
-            var days = new Date().getTime() - new Date(key).getTime();
+            var days = new Date(key).getTime()-start.getTime();
+            var reverseDays = new Date().getTime() - new Date(key).getTime();
             var diff = parseInt(days / (1000 * 60 * 60 * 24));
+            var reverseDiff = parseInt(reverseDays / (1000 * 60 * 60 * 24));
          
             var listLength = res.data[key].length;
             var last = res.data[key][listLength-1];// 当天取最后一个
@@ -76,13 +78,13 @@ Page({
                 ['item_' + diff]: app.globalData.clockInfo.optionList[last[value]]
               })
             }
-            if (diff <= 7 && lastValue > 0) {
+            if (reverseDiff <= 7 && lastValue > 0) {
               week++;
             }
-            if (diff <= 30 && lastValue > 0) {
+            if (reverseDiff <= 30 && lastValue > 0) {
               month++;
             }
-            if (diff <= 365 && lastValue > 0) {
+            if (reverseDiff <= 365 && lastValue > 0) {
               year++;
             }
 
