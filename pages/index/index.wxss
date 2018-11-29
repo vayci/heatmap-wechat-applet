@@ -44,8 +44,13 @@
     font-size: 8px;
     text-align: center;
     font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-    color: gray;
+    color: #75b658;
 }
+
+#week_Sun,#week_Sat{
+  color: #f4c750;
+}
+
 
 .map {
   display:flex;

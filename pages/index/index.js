@@ -1,8 +1,8 @@
 //index.js
 var util = require('../../utils/util.js');  
 //获取应用实例
-const app = getApp()
-const weekArr = ["7", "1", "2", "3", "4", "5", "6"];
+const app = getApp();
+const weekArr = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
 var now = new Date();
 var start = new Date(now.getFullYear() - 1, now.getMonth(), now.getDate());
 var heatMapList = [];
@@ -64,11 +64,20 @@ Page({
           var month = 0;
           var week = 0;
           for (var key in res.data) {
-            var days = new Date(key).getTime()-start.getTime();
-            var reverseDays = new Date().getTime() - new Date(key).getTime();
-            var diff = parseInt(days / (1000 * 60 * 60 * 24));
-            var reverseDiff = parseInt(reverseDays / (1000 * 60 * 60 * 24));
-         
+            var clockDate = new Date(key);
+            // 打卡时间距离热图起始时间相差天数 用于渲染
+            var diff = util.dayDiff(start,clockDate);
+
+            var diffInWeek = util.dayDiffInWeek(clockDate);
+            var diffInMonth = util.dayDiffInMonth(clockDate);
+            var diffInYear = util.dayDiffInYear(clockDate);
+
+            // console.log("打卡日期:"+clockDate);
+            // console.log("起始差:"+diff);
+            // console.log("周差:"+diffInWeek);
+            // console.log("月差:"+diffInMonth);
+            // console.log("年差:"+diffInYear);
+
             var listLength = res.data[key].length;
             var last = res.data[key][listLength-1];// 当天取最后一个
             var lastValue = 0;
@@ -78,13 +87,13 @@ Page({
                 ['item_' + diff]: app.globalData.clockInfo.optionList[last[value]]
               })
             }
-            if (reverseDiff <= 7 && lastValue > 0) {
+            if (0 <= diffInWeek < 7 && lastValue > 0) {
               week++;
             }
-            if (reverseDiff <= 30 && lastValue > 0) {
+            if (0 <= diffInMonth < 30 && lastValue > 0) {
               month++;
             }
-            if (reverseDiff <= 365 && lastValue > 0) {
+            if (0 <= diffInYear < 365 && lastValue > 0) {
               year++;
             }
 
@@ -134,7 +143,8 @@ Page({
         var obj = { [util.formatTime(new Date())]: [{ [new Date()]: value }] };
         pageobj.setHeatDataAndReload(obj);
       }
-    })
+    });
+    wx.vibrateShort({});
     wx.showToast({
       title: '打卡成功',
       duration: 500
@@ -165,4 +175,4 @@ Page({
       }
     })
   }
-})
+});

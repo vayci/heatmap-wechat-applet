@@ -11,10 +11,10 @@
   </view>
 <view class="wrap"> 
     <view class="week" id="col_0">
-      <view class="weekItem"  wx:for="{{reWeekArr}}" wx:key="idx" wx:for-index="idx" wx:for-item="week" id="week_{{idx}}">{{week}}          </view>
+      <view class="weekItem"  wx:for="{{reWeekArr}}" wx:key="idx" wx:for-index="idx" wx:for-item="week" id="week_{{week}}">{{week}}          </view>
    </view>
    <view class='page-section-spacing'>
-   <scroll-view scroll-x class="scroll-view_H" scroll-left="700">
+   <scroll-view scroll-x scroll-with-animation="true" class="scroll-view_H" scroll-left="700">
    <view class="col" id="col_1">
     <view class="item {{item_0}}" bindtap="showDetail" data-id="0"></view>
     <view class="item {{item_1}}" bindtap="showDetail" data-id="1"></view>
