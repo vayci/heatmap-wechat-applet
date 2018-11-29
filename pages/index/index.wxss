@@ -51,6 +51,9 @@
   color: #f4c750;
 }
 
+.count_words{
+    color: #75b658;
+}
 
 .map {
   display:flex;

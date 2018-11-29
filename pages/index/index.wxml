@@ -493,13 +493,13 @@
   </view>
   <view class='content'>
     <view class='content_item'>
-        · 过去一周，共打卡{{countWeek}}次
+        · 周打卡 <text class="count_words">{{countWeek}}</text> 次
     </view>
 	<view class='content_item'>
-        · 过去一月，共打卡{{countMonth}}次
+        · 月打卡 <text class="count_words">{{countMonth}}</text> 次
     </view>
     <view class='content_item'>
-        · 过去一年，共打卡{{countYear}}次
+        · 年打卡 <text class="count_words">{{countYear}}</text> 次
     </view>
   </view>
   <view class='btn_area'>
