@@ -13,7 +13,8 @@
     <view class="week" id="col_0">
       <view class="weekItem"  wx:for="{{reWeekArr}}" wx:key="idx" wx:for-index="idx" wx:for-item="week" id="week_{{idx}}">{{week}}          </view>
    </view>
-   <view class='map'>
+   <view class='page-section-spacing'>
+   <scroll-view scroll-x class="scroll-view_H" scroll-left="700">
    <view class="col" id="col_1">
     <view class="item {{item_0}}" bindtap="showDetail" data-id="0"></view>
     <view class="item {{item_1}}" bindtap="showDetail" data-id="1"></view>
@@ -487,7 +488,8 @@
     <view class="item {{item_365}}" bindtap="showDetail" data-id="365"></view>
     <view wx:if="{{leapYear}}"  class="item {{item_366}}" bindtap="showDetail" data-id="366"></view>
    </view>
-   </view>
+  </scroll-view>
+  </view>
   </view>
   <view class='content'>
     <view class='content_item'>
